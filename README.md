@@ -1,7 +1,8 @@
-# How-to-create-jump-list-using-Xamarin.Forms-listview
+# How to add a jump list with xamarin.forms listview
 
-You can create jump list using Xamarin.Forms ListView by tap on the indexed letter group key) and scroll to the respective group [GroupHeaderItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupHeaderItem.html) by passing group key index in [ScrollToIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method like contact list. This article explains you how to create jump list with group key and scroll to tapped item.
+You can add jump list using Xamarin.Forms ListView by tap on the indexed letter (group key) and scroll to the respective group [GroupHeaderItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupHeaderItem.html) by passing group key index in [ScrollToIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method like contact list. This article explains you how to create jump list with group key and scroll to tapped item.
 
+Creates panel to shows the group key as indexed vertically.
 ```
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms" >
     <ContentPage.Content>
@@ -27,7 +28,7 @@ You can create jump list using Xamarin.Forms ListView by tap on the indexed lett
     </ContentPage.Content>
 </ContentPage>
 ```
-Creating new label with index letter from the Key value of GroupHeader after loading.
+Creates and populate the index panel with index labeled from the Group key.
 
 ```
 ListView.Loaded += ListView_Loaded;
@@ -46,7 +47,7 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
      }
 }
 ```
-On tapping the group key value loaded in IndexLabelGrid, you can scroll the listview to the respective group by comparing all GroupHeader’s Key value like below.
+On tapping the group key value loaded in the index panel, you can scroll the listview to the respective group by comparing all GroupHeader’s Key value like below.
 
 ```
 private void OnTapped(object obj)
