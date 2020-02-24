@@ -1,6 +1,8 @@
 # How to add a jump list with xamarin.forms listview
 
-You can add jump list using Xamarin.Forms ListView by tap on the indexed letter (group key) and scroll to the respective group [GroupHeaderItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupHeaderItem.html) by passing group key index in [ScrollToIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method like contact list. This article explains you how to create jump list with group key and scroll to tapped item.
+You can add jump list using Xamarin.Forms ListView by tap on the indexed letter (group key) and scroll to the respective group [GroupHeaderItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupHeaderItem.html) by passing group key index in [ScrollToIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method like contact list. You can refer following article explains you how to create jump list with group key and scroll to tapped item.
+
+https://www.syncfusion.com/kb/11021/how-to-add-a-jump-list-with-xamarin-forms-listview 
 
 Creates panel to shows the group key as indexed vertically.
 ```
