@@ -73,3 +73,6 @@ private void OnTapped(object obj)
      previousLabel = label;
 }
 ```
+**OutPut**
+
+![JumpList](https://github.com/SyncfusionExamples/how-to-add-a-jump-list-with-xamarin.forms-listview/blob/master/Screenshots/JumpList.png)
