@@ -43,10 +43,11 @@ namespace SfListViewSample
             //Creating new label based on the group header key value after loading
 
             var groupcount = this.ListView.DataSource.Groups.Count;
+            var items = ListView.DataSource.Groups.ToList<GroupResult>().OrderBy(o=>o.Key);           
             for (int i = 0; i < groupcount; i++)
             {
                 label = new Label();
-                GroupResult group = ListView.DataSource.Groups[i];
+                GroupResult group = items.ElementAt(i);
                 label.Text = group.Key.ToString();
                 indexPanelGrid.Children.Add(label, 0, i);
                 var labelTapped = new TapGestureRecognizer() { Command = new Command<object>(OnTapped), CommandParameter = label };
